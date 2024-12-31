@@ -39,5 +39,9 @@
         font-size: 14px;
         line-height: 1.71429;
         background: #1b1b1e;
+
+        &:hover {
+            background: #009661;
+        }
     }
 }
