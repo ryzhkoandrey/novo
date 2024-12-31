@@ -1,6 +1,7 @@
 .hero {
     position: relative;
-    padding: 245px 0;
+    padding: 157px 0 244px;
+    min-height: 762px;
     background: url('../img/hero/hero-bg.jpg') no-repeat center / cover;
 
     @media (min-resolution: 192dpi) {
@@ -40,6 +41,7 @@
 
     &__title {
         margin-bottom: 65px;
+        max-width: 600px;
         font-weight: 400;
         font-size: 60px;
         line-height: 1.5;
