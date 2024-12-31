@@ -10,7 +10,6 @@
 
     &::before {
         content: '';
-        z-index: 1;
         position: absolute;
         top: 0;
         left: 0;
@@ -20,7 +19,6 @@
     }
 
     &__container {
-        z-index: 2;
         position: relative;
     }
 
