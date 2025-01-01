@@ -1,5 +1,7 @@
 .about {
 
+    // top
+
     &__top {
         padding: 90px 0 180px;
     }
@@ -12,6 +14,8 @@
         align-items: center;
         gap: 20px;
     }
+
+    // cards
 
     &__cards {}
 
@@ -32,6 +36,8 @@
     &__cards-slide:nth-child(3) {
         padding-top: 64px;
     }
+
+    // card
 
     &__card {
         overflow: hidden;
@@ -65,7 +71,83 @@
         color: #fff;
     }
 
-    &__bottom {}
+    // bottom
 
-    &__benefits {}
+    &__bottom {
+        padding: 192px 0 110px;
+        background: #1b1b1e;
+    }
+
+    // benefits
+
+    &__benefits {
+        position: relative;
+        margin: -65px -80px;
+    }
+
+    &__benefits-image {}
+
+    // benefit
+
+    &__benefit {
+        position: absolute;
+        transform: translateX(-50px);
+
+        &--left {
+            top: -1.5%;
+            left: 11.8%;
+        }
+
+        &--center {
+            top: -7%;
+            left: 50%;
+        }
+
+        &--right {
+            top: -1.5%;
+            right: 2.9%;
+        }
+    }
+
+    &__benefit-title {
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 1.5;
+        text-align: center;
+        color: #fff;
+    }
+
+    &__benefit-dot {
+        transform: translateX(-50%);
+        position: absolute;
+        bottom: -38px;
+        left: 50%;
+        border-radius: 100%;
+        width: 16px;
+        height: 16px;
+        background: #2f80ed;
+
+        &::before,
+        &::after {
+            content: '';
+            transform: translate(-50%, -50%);
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            border-radius: 100%;
+            border: 1px solid #2f80ed;
+        }
+
+        &::before {
+            width: 40px;
+            height: 40px;
+            opacity: .4;
+        }
+
+        &::after {
+            width: 60px;
+            height: 60px;
+            opacity: 0.15;
+        }
+    }
 }
