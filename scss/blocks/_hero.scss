@@ -2,10 +2,10 @@
     position: relative;
     padding: 157px 0 244px;
     min-height: 762px;
-    background: url('../img/hero/hero-bg.jpg') no-repeat center / cover;
+    background: url('../img/hero/bg.jpg') no-repeat center / cover;
 
     @media (min-resolution: 192dpi) {
-        background-image: url('../img/hero/hero-bg@2x.jpg');
+        background-image: url('../img/hero/bg@2x.jpg');
     }
 
     &::before {
