@@ -21,7 +21,17 @@
         gap: 20px;
     }
 
-    &__cards-slide {}
+    &__cards-slide:nth-child(1) {
+        padding-top: 64px;
+    }
+
+    &__cards-slide:nth-child(2) {
+        padding-top: 128px;
+    }
+
+    &__cards-slide:nth-child(3) {
+        padding-top: 64px;
+    }
 
     &__card {
         overflow: hidden;
