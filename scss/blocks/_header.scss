@@ -13,27 +13,6 @@
 
     &__logo-icon {}
 
-    &__menu {}
-
-    &__menu-list {
-        display: flex;
-        align-items: center;
-        gap: 60px;
-    }
-
-    &__menu-item {}
-
-    &__menu-link {
-        font-weight: 600;
-        font-size: 14px;
-        line-height: 1.71429;
-        color: #858586;
-
-        &:hover {
-            color: #009661;
-        }
-    }
-
     &__login {
         padding: 16px 32px;
         font-size: 14px;
