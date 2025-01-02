@@ -1,0 +1,26 @@
+.step {
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+
+    &__image {
+        position: absolute;
+        top: 0;
+        left: 50%;
+        transform: translateX(calc(-100% + 90px));
+    }
+
+    &__info {
+        grid-column: 2;
+        padding-left: 216px;
+        min-height: 458px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 8px;
+    }
+
+    &__subtitle {}
+
+    &__title {}
+}

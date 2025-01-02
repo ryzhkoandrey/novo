@@ -1,0 +1,17 @@
+.steps {
+    padding: 120px 0;
+    background: #1b1b1e;
+
+    &__heading {
+        margin-bottom: 80px;
+    }
+
+    &__cards {
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+        gap: 60px;
+    }
+
+    &__footer {}
+}
