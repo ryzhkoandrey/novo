@@ -33,13 +33,40 @@
         gap: 10px;
     }
 
-    &__cta {}
+    &__cta {
+        position: relative;
+        margin: 0 auto;
+        padding: 51px 0 51px 54px;
+        max-width: 757px;
+        width: 100%;
+    }
 
-    &__cta-image {}
+    &__cta-image {
+        position: absolute;
+        top: 0;
+        left: -33px;
+    }
 
-    &__cta-info {}
+    &__cta-info {
+        border-radius: 8px;
+        padding: 30px 40px 38px 259px;
+        background: #1b1b1e;
+    }
 
-    &__cta-title {}
+    &__cta-title {
+        margin-bottom: 16px;
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 1.5;
+        color: #fff;
+    }
 
-    &__cta-text {}
+    &__cta-text {
+        margin-bottom: 40px;
+        max-width: 265px;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 1.5;
+        color: #858586;
+    }
 }
