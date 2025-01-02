@@ -1,1 +1,42 @@
-.footer {}
+.footer {
+
+    &__top {}
+
+    // infos
+
+    &__info {}
+
+    &__info-logo {}
+
+    &__info-about {}
+
+    // links
+
+    &__links {}
+
+    &__links-title {}
+
+    &__links-row {}
+
+    &__links-link {}
+
+    // socials
+
+    &__socials {}
+
+    &__socials-title {}
+
+    &__socials-list {}
+
+    &__socials-item {}
+
+    &__socials-link {}
+
+    &__socials-icon {}
+
+    // bottom
+
+    &__bottom {}
+
+    &__copyright {}
+}
