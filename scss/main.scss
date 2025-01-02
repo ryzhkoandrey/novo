@@ -9,6 +9,7 @@
 // libs
 
 @import '../libs/graph-modal/graph-modal.min.css';
+@import '../libs/graph-modal/graph-modal-override';
 
 // blocks
 
@@ -29,3 +30,4 @@
 @import 'blocks/step';
 @import 'blocks/steps';
 @import 'blocks/footer';
+@import 'blocks/modal';

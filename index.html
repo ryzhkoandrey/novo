@@ -309,10 +309,24 @@
     </footer>
 
     <!-- modal -->
-    <div class="graph-modal">
-        <div class="graph-modal__container" role="dialog" aria-modal="true" data-graph-target="request">
-            <button class="btn-reset graph-modal__close js-modal-close" aria-label="Закрыть модальное окно"></button>
-            <div class="graph-modal__content">modal</div>
+    <div class="modal graph-modal">
+        <div class="modal__container graph-modal__container" role="dialog" aria-modal="true" data-graph-target="request">
+            <button class="modal__close btn-reset graph-modal__close js-modal-close" aria-label="Закрыть модальное окно"></button>
+            <div class="modal__content graph-modal__content">
+
+                <h2 class="modal__title">Мы свяжемся с вами в ближайшее время</h2>
+                <p class="modal__description">Впишите свои данные и мы перезвоним вам для создания личного тарифного плана</p>
+
+                <form class="modal__form" action="#">
+                    <div class="modal__inputs">
+                        <input class="modal__input" type="text" placeholder="Ваше имя">
+                        <input class="modal__input" type="email" placeholder="E-mail адрес">
+                        <input class="modal__input" type="tel" placeholder="Номер телефона">
+                    </div>
+                    <button class="modal__btn btn">Перезвоните мне!</button>
+                </form>
+
+            </div>
         </div>
     </div>
 
