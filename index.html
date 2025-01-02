@@ -53,7 +53,7 @@
 
                     <p class="hero__subtitle">Novo - маркетплейс техники</p>
                     <h1 class="hero__title">Продавай технику быстро и удобно!</h1>
-                    <button class="btn btn--large">Стать продавцем на Novo</button>
+                    <button class="btn btn--large" data-graph-path="request">Стать продавцем на Novo</button>
 
                 </div>
             </div>
@@ -253,7 +253,7 @@
             </div>
 
             <div class="steps__footer">
-                <button class="btn btn--large">Стать продавцем</button>
+                <button class="btn btn--large" data-graph-path="request">Стать продавцем</button>
             </div>
 
         </section>
@@ -308,7 +308,16 @@
         </div>
     </footer>
 
+    <!-- modal -->
+    <div class="graph-modal">
+        <div class="graph-modal__container" role="dialog" aria-modal="true" data-graph-target="request">
+            <button class="btn-reset graph-modal__close js-modal-close" aria-label="Закрыть модальное окно"></button>
+            <div class="graph-modal__content">modal</div>
+        </div>
+    </div>
+
     <!-- js -->
+    <script src="libs/graph-modal/graph-modal.min.js"></script>
     <script src="js/main.js"></script>
 
 </body>
