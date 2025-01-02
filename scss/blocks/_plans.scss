@@ -1,8 +1,37 @@
 .plans {
+    padding: 184px 0 180px;
 
-    &__heading {}
+    &__heading {
+        position: relative;
+        margin: 0 auto 80px;
+        max-width: 886px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 16px;
 
-    &__cards {}
+        &::before {
+            content: '';
+            position: absolute;
+            top: 5px;
+            left: 50%;
+            transform: translateX(-50%);
+            z-index: -1;
+            border-radius: 8px;
+            width: 108px;
+            height: 180px;
+            background: #1b1b1e;
+        }
+    }
+
+    &__cards {
+        margin: 0 auto 120px;
+        max-width: 1113px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 10px;
+    }
 
     &__cta {}
 

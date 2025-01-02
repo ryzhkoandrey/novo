@@ -1,20 +1,84 @@
 .plan {
+    border-radius: 8px;
+    padding: 40px 20px;
+    max-width: 289px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 
-    &__icon {}
+    &:hover {
+        background: #1b1b1e;
 
-    &__title {}
+        .plan__btn {
+            background: #009661;
+        }
+    }
 
-    &__price {}
+    &__icon {
+        margin-bottom: 18px;
+    }
 
-    &__price-currency {}
+    &__title {
+        margin-bottom: 20px;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 1.5;
+        text-align: center;
+        color: #fff;
+    }
 
-    &__price-value {}
+    &__price {
+        margin-bottom: 8px;
+        display: flex;
+        align-items: baseline;
+        gap: 2px;
+    }
 
-    &__price-period {}
+    &__price-currency {
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 1.71429;
+        text-align: center;
+        color: #676769;
+    }
 
-    &__ads {}
+    &__price-value {
+        font-weight: 400;
+        font-size: 40px;
+        line-height: 1.5;
+        color: #fff;
+    }
 
-    &__btn {}
+    &__price-period {
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 1.71429;
+        text-align: center;
+        color: #676769;
+    }
 
-    &__btn-icon {}
+    &__ads {
+        margin-bottom: 40px;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 1.33333;
+        text-align: center;
+        color: #009661;
+    }
+
+    &__btn {
+        border-radius: 100%;
+        width: 56px;
+        height: 56px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 2px solid #009661;
+        transition: 0.2s;
+    }
+
+    &__btn-icon {
+        transform: translateX(1px);
+    }
 }
