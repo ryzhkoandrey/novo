@@ -3,6 +3,7 @@
     border-top: 1px solid #424247;
 
     &__top {
+        margin-bottom: 50px;
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -23,7 +24,7 @@
         font-weight: 500;
         font-size: 14px;
         line-height: 1.71429;
-        color: rgb(255, 255, 255, 0.6);
+        color: rgba(255, 255, 255, 0.6);
     }
 
     // links
@@ -35,7 +36,7 @@
         font-weight: 500;
         font-size: 14px;
         line-height: 1.5;
-        color: rgb(255, 255, 255, 0.6);
+        color: rgba(255, 255, 255, 0.6);
     }
 
     &__links-row {
@@ -57,23 +58,49 @@
 
     // socials
 
-    &__socials {}
+    &__socials {
+        min-width: 185px;
+    }
 
-    &__socials-title {}
+    &__socials-title {
+        margin-bottom: 16px;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 1.5;
+        color: rgba(255, 255, 255, 0.6);
+    }
 
     &__socials-list {
         display: flex;
+        align-items: center;
+        gap: 12px;
     }
 
     &__socials-item {}
 
-    &__socials-link {}
+    &__socials-link {
+
+        &:hover {
+            opacity: 0.7;
+        }
+    }
 
     &__socials-icon {}
 
     // bottom
 
-    &__bottom {}
+    &__bottom {
+        padding: 16px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 2px solid rgba(255, 255, 255, 0.1);
+    }
 
-    &__copyright {}
+    &__copyright {
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 1.71429;
+        color: rgba(255, 255, 255, 0.6);
+    }
 }
