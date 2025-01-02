@@ -8,10 +8,15 @@
 
     &__cards {
         overflow: hidden;
+        margin-bottom: 120px;
         display: flex;
         flex-direction: column;
         gap: 60px;
     }
 
-    &__footer {}
+    &__footer {
+        padding: 0 var(--container-padding);
+        display: flex;
+        justify-content: center;
+    }
 }
