@@ -4,4 +4,8 @@
     line-height: 1.5;
     text-align: center;
     color: #fff;
+
+    @include laptop {
+        font-size: 30px;
+    }
 }

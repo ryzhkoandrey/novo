@@ -1,6 +1,6 @@
 .menu {
 
-    @include tablet {
+    @include mobile {
         display: none;
     }
 
@@ -9,7 +9,7 @@
         align-items: center;
         gap: 60px;
 
-        @include laptop {
+        @include tablet {
             gap: 32px;
         }
     }
