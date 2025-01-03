@@ -2,5 +2,4 @@
 
 // ---------- MODAL ----------
 
-// const modal = new GraphModal();
-const modal = new GraphModal().open('request');
+const modal = new GraphModal();

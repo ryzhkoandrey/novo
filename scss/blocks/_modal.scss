@@ -4,6 +4,7 @@
 
     &__container {
         border-radius: 10px;
+        padding: 80px 77px 88px;
         max-width: 598px;
         width: 100%;
         box-shadow: 0 56px 94px 0 rgba(0, 0, 0, 0.53);
@@ -23,9 +24,7 @@
         }
     }
 
-    &__content {
-        padding: 80px 77px 88px;
-    }
+    &__content {}
 
     &__title {
         margin-bottom: 20px;
@@ -37,7 +36,8 @@
     }
 
     &__description {
-        margin-bottom: 60px;
+        margin: 0 auto 60px;
+        max-width: 356px;
         font-weight: 400;
         font-size: 16px;
         line-height: 1.5;
