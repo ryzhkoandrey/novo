@@ -109,6 +109,10 @@
     &__benefits {
         position: relative;
         height: 439px;
+
+        @include laptop {
+            height: 361px;
+        }
     }
 
     &__benefits-image {
@@ -117,31 +121,46 @@
         left: 50%;
         transform: translateX(-50%);
         max-width: none;
+
+        @include laptop {
+            top: 34px;
+            width: 1086px;
+        }
     }
 
     // benefit
 
     &__benefit {
         position: absolute;
-        top: 0;
         left: 50%;
 
         &--left {
-            transform: translateX(calc(-50% - 100px));
+            top: 28px;
+            transform: translateX(calc(-50% - 505px));
 
-            @include laptop {}
+            @include laptop {
+                top: 13px;
+                transform: translateX(calc(-50% - 400px));
+            }
         }
 
         &--center {
+            top: 0;
             transform: translateX(-50%);
 
-            @include laptop {}
+            @include laptop {
+                top: -10px;
+            }
         }
 
         &--right {
-            transform: translateX(calc(-50% + 100px));
+            top: 28px;
+            transform: translateX(calc(-50% + 505px));
 
-            @include laptop {}
+            @include laptop {
+                top: 13px;
+                transform: translateX(calc(-50% + 400px));
+            }
         }
     }
 
@@ -169,6 +188,7 @@
         animation: dot 1.5s infinite;
 
         @include laptop {
+            bottom: -41px;
             width: 11px;
             height: 11px;
         }
@@ -189,12 +209,22 @@
             width: 40px;
             height: 40px;
             opacity: .4;
+
+            @include laptop {
+                width: 27px;
+                height: 27px;
+            }
         }
 
         &::after {
             width: 60px;
             height: 60px;
             opacity: .15;
+
+            @include laptop {
+                width: 40px;
+                height: 40px;
+            }
         }
     }
 }
