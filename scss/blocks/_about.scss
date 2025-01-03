@@ -100,7 +100,7 @@
 
     &__bottom {
         overflow: hidden;
-        padding: 192px 0 50px;
+        padding: 90px 0 110px;
         background: #1b1b1e;
     }
 
@@ -108,46 +108,40 @@
 
     &__benefits {
         position: relative;
-        margin: -65px -80px;
-
-        @include laptop {
-            margin: -68px -63px;
-        }
+        height: 439px;
     }
 
-    &__benefits-image {}
+    &__benefits-image {
+        position: absolute;
+        top: 37px;
+        left: 50%;
+        transform: translateX(-50%);
+        max-width: none;
+    }
 
     // benefit
 
     &__benefit {
         position: absolute;
-        transform: translateX(-50px);
+        top: 0;
+        left: 50%;
 
         &--left {
-            top: -1.5%;
-            left: 11.8%;
+            transform: translateX(calc(-50% - 100px));
 
-            @include laptop {
-                top: -4.5%;
-            }
+            @include laptop {}
         }
 
         &--center {
-            top: -7%;
-            left: 50%;
+            transform: translateX(-50%);
 
-            @include laptop {
-                top: -11%;
-            }
+            @include laptop {}
         }
 
         &--right {
-            top: -1.5%;
-            right: 2.9%;
+            transform: translateX(calc(-50% + 100px));
 
-            @include laptop {
-                top: -4.5%;
-            }
+            @include laptop {}
         }
     }
 
