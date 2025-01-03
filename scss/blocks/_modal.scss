@@ -1,8 +1,23 @@
 .modal {
 
-    &__container {}
+    &__container {
+        border-radius: 10px;
+        max-width: 598px;
+        width: 100%;
+        box-shadow: 0 56px 94px 0 rgba(0, 0, 0, 0.53);
+        background: #1b1b1e;
+    }
 
-    &__close {}
+    &__close {
+        padding: 15px;
+        width: 20px;
+        height: 20px;
+        background: url('../img/icons/close.svg') no-repeat center;
+
+        &:hover {
+            opacity: 0.7;
+        }
+    }
 
     &__content {}
 
