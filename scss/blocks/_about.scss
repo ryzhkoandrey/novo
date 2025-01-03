@@ -99,6 +99,7 @@
     // bottom
 
     &__bottom {
+        overflow: hidden;
         padding: 192px 0 50px;
         background: #1b1b1e;
     }
@@ -108,6 +109,10 @@
     &__benefits {
         position: relative;
         margin: -65px -80px;
+
+        @include laptop {
+            margin: -68px -63px;
+        }
     }
 
     &__benefits-image {}
@@ -121,16 +126,28 @@
         &--left {
             top: -1.5%;
             left: 11.8%;
+
+            @include laptop {
+                top: -4.5%;
+            }
         }
 
         &--center {
             top: -7%;
             left: 50%;
+
+            @include laptop {
+                top: -11%;
+            }
         }
 
         &--right {
             top: -1.5%;
             right: 2.9%;
+
+            @include laptop {
+                top: -4.5%;
+            }
         }
     }
 
@@ -140,6 +157,10 @@
         line-height: 1.5;
         text-align: center;
         color: #fff;
+
+        @include laptop {
+            font-size: 20px;
+        }
     }
 
     &__benefit-dot {
@@ -152,6 +173,11 @@
         height: 16px;
         background: #2f80ed;
         animation: dot 1.5s infinite;
+
+        @include laptop {
+            width: 11px;
+            height: 11px;
+        }
 
         &::before,
         &::after {
@@ -178,6 +204,8 @@
         }
     }
 }
+
+// animation
 
 @keyframes dot {
 
