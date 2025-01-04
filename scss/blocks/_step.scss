@@ -21,6 +21,10 @@
             @include laptop {
                 padding: 0 185px 0 var(--container-padding);
             }
+
+            @include tablet {
+                padding: 0 128px 0 var(--container-padding);
+            }
         }
     }
 
@@ -46,6 +50,10 @@
         @include laptop {
             padding: 0 var(--container-padding) 0 140px;
             min-height: 337px;
+        }
+
+        @include tablet {
+            padding: 0 var(--container-padding) 0 120px;
         }
     }
 
