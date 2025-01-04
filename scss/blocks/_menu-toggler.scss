@@ -9,7 +9,7 @@
 	--color: #fff;
 	--radius: 0px;
 
-	--time: 0.1s;
+	--time: 0.08s;
 
 	width: var(--width);
 	height: var(--height);
@@ -47,8 +47,8 @@
 		position: relative;
 		border-radius: var(--radius);
 		width: var(--width);
-		// height: var(--line-height);
 		height: 0;
+		// height: var(--line-height);
 		background-color: var(--color);
 
 		&::before,

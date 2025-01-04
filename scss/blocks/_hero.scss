@@ -6,6 +6,14 @@
         background-image: url('../img/hero/bg@2x.jpg');
     }
 
+    @include mobile {
+        background-image: url('../img/hero/bg-mobile.jpg');
+
+        @media (min-resolution: 192dpi) {
+            background-image: url('../img/hero/bg-mobile@2x.jpg');
+        }
+    }
+
     &::before {
         content: '';
         position: absolute;
@@ -21,6 +29,14 @@
 
         @include tablet {
             width: 84%;
+        }
+
+        @include mobile {
+            top: auto;
+            bottom: 0;
+            width: 100%;
+            height: 389px;
+            background: linear-gradient(360deg, #141416 0%, rgba(20, 20, 22, 0.6) 46.48%, rgba(20, 20, 22, 0.1) 100%);
         }
     }
 
@@ -40,6 +56,15 @@
         @include laptop {
             min-height: 650px;
         }
+
+        @include mobile {
+            margin: 0 auto;
+            padding-bottom: 50px;
+            max-width: 400px;
+            min-height: 500px;
+            justify-content: flex-end;
+            align-items: center;
+        }
     }
 
     &__subtitle {
@@ -55,6 +80,10 @@
 
         @include tablet {
             font-size: 16px;
+        }
+
+        @include mobile {
+            margin-bottom: 8px;
         }
     }
 
@@ -72,6 +101,12 @@
 
         @include tablet {
             font-size: 45px;
+        }
+
+        @include mobile {
+            margin-bottom: 40px;
+            font-size: 35px;
+            text-align: center;
         }
     }
 }
