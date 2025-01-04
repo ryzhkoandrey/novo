@@ -4,6 +4,10 @@
 
     &__heading {
         margin-bottom: 80px;
+
+        @include laptop {
+            margin-bottom: 95px;
+        }
     }
 
     &__cards {
