@@ -6,6 +6,10 @@
         padding: 33px 0;
     }
 
+    @include mobile {
+        padding: 28px 0;
+    }
+
     &__inner {
         display: flex;
         justify-content: space-between;
