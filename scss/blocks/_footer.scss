@@ -6,6 +6,10 @@
         padding: 55px 0 20px;
     }
 
+    @include tablet {
+        padding: 53px 0 20px;
+    }
+
     &__top {
         margin-bottom: 50px;
         display: flex;
@@ -18,6 +22,10 @@
             padding: 0 45px 0 43px;
             align-items: flex-start;
         }
+
+        @include tablet {
+            padding: 0 29px 0 27px;
+        }
     }
 
     // info
@@ -26,6 +34,7 @@
         max-width: 320px;
 
         @include laptop {
+            padding-top: 2px;
             max-width: 209px;
         }
     }
