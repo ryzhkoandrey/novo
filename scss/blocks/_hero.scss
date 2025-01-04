@@ -11,9 +11,17 @@
         position: absolute;
         top: 0;
         left: 0;
-        width: 58.33%;
+        width: 58%;
         height: 100%;
         background: linear-gradient(270deg, rgba(20, 20, 22, 0.1) 0%, #141416 61.01%);
+
+        @include laptop {
+            width: 64%;
+        }
+
+        @include tablet {
+            width: 84%;
+        }
     }
 
     &__container {
@@ -22,7 +30,7 @@
     }
 
     &__inner {
-        max-width: 768px;
+        max-width: 553px;
         min-height: 762px;
         display: flex;
         flex-direction: column;
@@ -40,11 +48,18 @@
         font-size: 24px;
         line-height: 1.5;
         color: rgba(255, 255, 255, .6);
+
+        @include laptop {
+            font-size: 20px;
+        }
+
+        @include tablet {
+            font-size: 16px;
+        }
     }
 
     &__title {
         margin-bottom: 65px;
-        max-width: 600px;
         font-weight: 400;
         font-size: 60px;
         line-height: 1.5;
@@ -53,6 +68,10 @@
         @include laptop {
             margin-bottom: 50px;
             font-size: 50px;
+        }
+
+        @include tablet {
+            font-size: 45px;
         }
     }
 }
