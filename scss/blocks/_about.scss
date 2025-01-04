@@ -142,6 +142,10 @@
         @include laptop {
             height: 361px;
         }
+
+        @include tablet {
+            height: 313px;
+        }
     }
 
     &__benefits-image {

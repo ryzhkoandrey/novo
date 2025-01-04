@@ -5,6 +5,10 @@
         padding: 180px 0;
     }
 
+    @include tablet {
+        padding: 156px 0 150px;
+    }
+
     &__heading {
         position: relative;
         margin: 0 auto 80px;
@@ -17,6 +21,10 @@
         @include laptop {
             margin: 0 auto 108px;
             max-width: 600px;
+        }
+
+        @include tablet {
+            margin: 0 auto 80px;
         }
 
         &::before {
@@ -48,6 +56,10 @@
         @include laptop {
             max-width: 942px;
         }
+
+        @include tablet {
+            margin: 0 auto 116px;
+        }
     }
 
     &__cta {
@@ -56,18 +68,32 @@
         padding: 51px 0 51px 54px;
         max-width: 757px;
         width: 100%;
+
+        @include tablet {
+            padding: 35px 0 35px 36px;
+            max-width: 614px;
+        }
     }
 
     &__cta-image {
         position: absolute;
         top: 0;
         left: -33px;
+
+        @include tablet {
+            left: -76px;
+            width: 336px;
+        }
     }
 
     &__cta-info {
         border-radius: 8px;
         padding: 30px 40px 38px 259px;
         background: #1b1b1e;
+
+        @include tablet {
+            padding: 40px 40px 40px 189px;
+        }
     }
 
     &__cta-title {
@@ -76,6 +102,10 @@
         font-size: 24px;
         line-height: 1.5;
         color: #fff;
+
+        @include tablet {
+            font-size: 20px;
+        }
     }
 
     &__cta-text {
