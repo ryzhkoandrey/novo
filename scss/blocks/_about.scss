@@ -175,6 +175,10 @@
         @include laptop {
             padding: 80px 0;
         }
+
+        @include mobile {
+            padding: 60px 0;
+        }
     }
 
     // benefits
@@ -189,6 +193,10 @@
 
         @include tablet {
             height: 313px;
+        }
+
+        @include mobile {
+            height: 260px;
         }
     }
 
@@ -207,6 +215,11 @@
         @include tablet {
             top: 35px;
             width: 768px;
+        }
+
+        @include mobile {
+            top: 62px;
+            width: 536px;
         }
     }
 
@@ -228,6 +241,10 @@
             @include tablet {
                 transform: translateX(calc(-50% - 294px));
             }
+
+            @include mobile {
+                transform: translateX(calc(-50% - 142px));
+            }
         }
 
         &--center {
@@ -236,6 +253,17 @@
 
             @include tablet {
                 top: 4px;
+            }
+
+            @include mobile {
+                top: 0;
+            }
+
+            .about__benefit-dot {
+
+                @include mobile {
+                    bottom: -56px;
+                }
             }
         }
 
@@ -250,6 +278,10 @@
 
             @include tablet {
                 transform: translateX(calc(-50% + 294px));
+            }
+
+            @include mobile {
+                transform: translateX(calc(-50% + 142px));
             }
         }
     }
@@ -285,6 +317,10 @@
             bottom: -41px;
             width: 11px;
             height: 11px;
+        }
+
+        @include mobile {
+            bottom: -32px;
         }
 
         &::before,
