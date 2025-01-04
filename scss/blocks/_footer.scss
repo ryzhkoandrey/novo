@@ -2,22 +2,37 @@
     padding: 75px 0 32px;
     border-top: 1px solid #424247;
 
+    @include laptop {
+        padding: 55px 0 20px;
+    }
+
     &__top {
         margin-bottom: 50px;
         display: flex;
         justify-content: space-between;
         align-items: center;
         gap: 15px;
+
+        @include laptop {
+            margin-bottom: 38px;
+            padding: 0 45px 0 43px;
+            align-items: flex-start;
+        }
     }
 
-    // infos
+    // info
 
     &__info {
         max-width: 320px;
+
+        @include laptop {
+            max-width: 209px;
+        }
     }
 
     &__info-logo {
         margin-bottom: 22px;
+        padding-left: 3px;
     }
 
     &__info-about {
@@ -42,6 +57,11 @@
     &__links-row {
         display: flex;
         gap: 60px;
+
+        @include laptop {
+            flex-direction: column;
+            gap: 12px;
+        }
     }
 
     &__links-link {
@@ -60,6 +80,10 @@
 
     &__socials {
         min-width: 185px;
+
+        @include laptop {
+            min-width: auto;
+        }
     }
 
     &__socials-title {
