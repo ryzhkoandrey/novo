@@ -13,9 +13,13 @@
 
 	width: var(--width);
 	height: var(--height);
-	display: flex;
-	justify-content: center;
-	align-items: center;
+	display: none;
+
+	@include mobile {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
 
 	&--active {
 
