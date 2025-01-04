@@ -8,4 +8,8 @@
     @include laptop {
         font-size: 20px;
     }
+
+    @include tablet {
+        font-size: 16px;
+    }
 }

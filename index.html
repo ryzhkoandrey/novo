@@ -59,7 +59,7 @@
             </div>
         </section>
 
-        <section class="none about">
+        <section class="about">
 
             <div class="about__top">
                 <div class="container">
@@ -119,7 +119,14 @@
             <div class="about__bottom">
                 <div class="about__benefits">
 
-                    <img class="about__benefits-image" src="img/about/benefits.png" srcset="img/about/benefits@2x.png 2x" width="1376" height="525" loading="lazy" alt="Интерфейс Novo">
+                    <picture>
+                        <!-- desktop -->
+                        <source srcset="img/about/benefits.png, img/about/benefits@2x.png 2x" media="(min-width: 1000px)">
+                        <!-- tablet -->
+                        <source srcset="img/about/benefits-tablet.png, img/about/benefits-tablet@2x.png 2x" media="(max-width: 999px)">
+                        <!-- default -->
+                        <img class="about__benefits-image" src="img/about/benefits.png" srcset="img/about/benefits@2x.png 2x" width="1376" height="525" loading="lazy" alt="Интерфейс Novo">
+                    </picture>
 
                     <div class="about__benefit about__benefit--left">
                         <h3 class="about__benefit-title">Понятный <br>мессенджер</h3>
