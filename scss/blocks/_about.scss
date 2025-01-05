@@ -12,6 +12,10 @@
         @include mobile {
             padding: 80px 0 120px;
         }
+
+        @include mobile-small {
+            padding: 60px 0 100px;
+        }
     }
 
     &__heading {
@@ -47,6 +51,11 @@
             margin: 0 auto;
             max-width: 354px;
         }
+
+        @include mobile-small {
+            margin: 0 calc(var(--container-padding) * -1) 0 0;
+            max-width: none;
+        }
     }
 
     &__cards-inner {
@@ -58,60 +67,80 @@
             grid-template-columns: repeat(2, 1fr);
             gap: 0 20px;
         }
-    }
 
-    &__cards-slide:nth-child(1) {
-        padding-top: 64px;
-
-        @include laptop {
-            padding-top: 40px;
-        }
-
-        @include tablet {
-            padding-top: 30px;
-        }
-
-        @include mobile {
-            padding-top: 0;
+        @include mobile-small {
+            display: flex; // Нужно для swiper
+            gap: 0;
         }
     }
 
-    &__cards-slide:nth-child(2) {
-        padding-top: 128px;
+    &__cards-slide {
 
-        @include laptop {
-            padding-top: 72px;
+        @include mobile-small {
+            width: 167px;
         }
 
-        @include tablet {
-            padding-top: 60px;
+        &:nth-child(1) {
+            padding-top: 64px;
+
+            @include laptop {
+                padding-top: 40px;
+            }
+
+            @include tablet {
+                padding-top: 30px;
+            }
+
+            @include mobile {
+                padding-top: 0;
+            }
         }
 
-        @include mobile {
-            padding-top: 30px;
+        &:nth-child(2) {
+            padding-top: 128px;
+
+            @include laptop {
+                padding-top: 72px;
+            }
+
+            @include tablet {
+                padding-top: 60px;
+            }
+
+            @include mobile {
+                padding-top: 30px;
+            }
+
+            @include mobile-small {
+                padding-top: 0;
+            }
         }
-    }
 
-    &__cards-slide:nth-child(3) {
-        padding-top: 64px;
+        &:nth-child(3) {
+            padding-top: 64px;
 
-        @include laptop {
-            padding-top: 40px;
+            @include laptop {
+                padding-top: 40px;
+            }
+
+            @include tablet {
+                padding-top: 30px;
+            }
+
+            @include mobile {
+                padding-top: 0;
+            }
         }
 
-        @include tablet {
-            padding-top: 30px;
-        }
+        &:nth-child(4) {
 
-        @include mobile {
-            padding-top: 0;
-        }
-    }
+            @include mobile {
+                padding-top: 30px;
+            }
 
-    &__cards-slide:nth-child(4) {
-
-        @include mobile {
-            padding-top: 30px;
+            @include mobile-small {
+                padding-top: 0;
+            }
         }
     }
 
@@ -124,12 +153,14 @@
         background: #1b1b1e;
 
         @include mobile {
-            max-height: 231px;
+            height: 231px;
         }
     }
 
     &__card-image {
         border-radius: 8px;
+        width: 100%;
+        height: 100%;
         object-fit: cover;
     }
 
@@ -179,6 +210,10 @@
         @include mobile {
             padding: 60px 0;
         }
+
+        @include mobile-small {
+            padding: 50px 0;
+        }
     }
 
     // benefits
@@ -221,6 +256,11 @@
             top: 62px;
             width: 536px;
         }
+
+        @include mobile-small {
+            top: 53px;
+            width: 390px;
+        }
     }
 
     // benefit
@@ -244,6 +284,10 @@
 
             @include mobile {
                 transform: translateX(calc(-50% - 142px));
+            }
+
+            @include mobile-small {
+                top: 27px;
             }
         }
 
@@ -283,6 +327,10 @@
             @include mobile {
                 transform: translateX(calc(-50% + 142px));
             }
+
+            @include mobile-small {
+                top: 27px;
+            }
         }
     }
 
@@ -299,6 +347,26 @@
 
         @include tablet {
             font-size: 16px;
+        }
+
+        @include mobile-small {
+            font-size: 14px;
+            line-height: 1.2;
+        }
+
+        &--desktop {
+
+            @include mobile-small {
+                display: none;
+            }
+        }
+
+        &--mobile {
+            display: none;
+
+            @include mobile-small {
+                display: block;
+            }
         }
     }
 

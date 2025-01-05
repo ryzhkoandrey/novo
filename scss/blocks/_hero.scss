@@ -122,7 +122,8 @@
             text-align: center;
         }
 
-        @include mobile {
+        @include mobile-small {
+            max-width: 280px;
             font-size: 24px;
         }
     }
