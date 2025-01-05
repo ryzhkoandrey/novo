@@ -62,11 +62,14 @@
         }
 
         @include mobile-small {
-            width: 240px;
+            top: -40px;
+            max-width: none;
+            width: 350px;
         }
     }
 
     &__info {
+        position: relative;
         grid-column: 2;
         padding: 0 var(--container-padding) 0 216px;
         min-height: 458px;
@@ -105,6 +108,10 @@
         @include mobile {
             align-items: center;
             gap: 11px;
+        }
+
+        @include mobile-small {
+            gap: 13px;
         }
     }
 
