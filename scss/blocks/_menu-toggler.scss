@@ -15,6 +15,10 @@
 	height: var(--height);
 	display: none;
 
+	&:hover {
+		opacity: 0.7;
+	}
+
 	@include mobile {
 		display: flex;
 		justify-content: center;

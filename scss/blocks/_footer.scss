@@ -26,6 +26,12 @@
         @include tablet {
             padding: 0 29px 0 27px;
         }
+
+        @include mobile {
+            padding: 0 48px 0 20px;
+            flex-wrap: wrap;
+            gap: 40px;
+        }
     }
 
     // info
@@ -36,6 +42,10 @@
         @include laptop {
             padding-top: 2px;
             max-width: 209px;
+        }
+
+        @include mobile {
+            min-width: 100%;
         }
     }
 
@@ -49,6 +59,10 @@
         font-size: 14px;
         line-height: 1.71429;
         color: rgba(255, 255, 255, 0.6);
+
+        @include mobile {
+            max-width: 300px;
+        }
     }
 
     // links
