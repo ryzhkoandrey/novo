@@ -1,4 +1,5 @@
 .plans {
+    overflow: hidden;
     padding: 184px 0 180px;
 
     @include laptop {
@@ -11,6 +12,10 @@
 
     @include mobile {
         padding: 120px 0 102px;
+    }
+
+    @include mobile-small {
+        padding: 100px 0;
     }
 
     &__heading {
@@ -36,6 +41,10 @@
             margin: 0 auto 20px;
             max-width: 440px;
             gap: 8px;
+        }
+
+        @include mobile-small {
+            margin: 0 auto 25px;
         }
 
         &::before {
@@ -83,6 +92,10 @@
             align-items: center;
             gap: 7px;
         }
+
+        @include mobile-small {
+            margin: 0 auto 62px;
+        }
     }
 
     &__cta {
@@ -102,6 +115,11 @@
             max-width: 328px;
             min-height: 426px;
         }
+
+        @include mobile-small {
+            padding: 0;
+            height: 426px;
+        }
     }
 
     &__cta-image {
@@ -115,9 +133,10 @@
         }
 
         @include mobile {
-            left: -5px;
-            width: 335px;
+            left: 50%;
+            transform: translateX(-50%);
             max-width: none;
+            width: 335px;
         }
     }
 
@@ -137,6 +156,14 @@
             display: flex;
             flex-direction: column;
             align-items: center;
+        }
+
+        @include mobile-small {
+            position: absolute;
+            top: 146px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 328px;
         }
     }
 

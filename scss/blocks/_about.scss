@@ -233,6 +233,10 @@
         @include mobile {
             height: 260px;
         }
+
+        @include mobile-small {
+            height: 196px;
+        }
     }
 
     &__benefits-image {
@@ -288,7 +292,7 @@
 
             @include mobile-small {
                 top: 27px;
-                transform: translateX(calc(-50% - 103px));
+                transform: translateX(calc(-50% - 104px));
             }
         }
 
