@@ -24,6 +24,10 @@
         @include mobile {
             margin-bottom: 60px;
         }
+
+        @include mobile-small {
+            margin-bottom: 80px;
+        }
     }
 
     &__cards {
