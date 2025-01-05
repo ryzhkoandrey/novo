@@ -111,12 +111,7 @@
         }
 
         @include mobile {
-            padding: 146px 0 0;
             max-width: 328px;
-            min-height: 426px;
-        }
-
-        @include mobile-small {
             padding: 0;
             height: 426px;
         }
@@ -150,20 +145,16 @@
         }
 
         @include mobile {
-            position: relative;
+            transform: translateX(-50%);
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            width: 328px;
             z-index: 2;
             padding: 40px 24px;
             display: flex;
             flex-direction: column;
             align-items: center;
-        }
-
-        @include mobile-small {
-            position: absolute;
-            top: 146px;
-            left: 50%;
-            transform: translateX(-50%);
-            width: 328px;
         }
     }
 
