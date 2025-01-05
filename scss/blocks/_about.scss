@@ -288,6 +288,7 @@
 
             @include mobile-small {
                 top: 27px;
+                transform: translateX(calc(-50% - 103px));
             }
         }
 
@@ -307,6 +308,10 @@
 
                 @include mobile {
                     bottom: -56px;
+                }
+
+                @include mobile-small {
+                    bottom: -50px;
                 }
             }
         }
@@ -330,6 +335,7 @@
 
             @include mobile-small {
                 top: 27px;
+                transform: translateX(calc(-50% + 104px));
             }
         }
     }
@@ -389,6 +395,10 @@
 
         @include mobile {
             bottom: -32px;
+        }
+
+        @include mobile-small {
+            bottom: -24px;
         }
 
         &::before,
