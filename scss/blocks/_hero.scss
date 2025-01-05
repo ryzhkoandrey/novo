@@ -38,6 +38,10 @@
             height: 389px;
             background: linear-gradient(360deg, #141416 0%, #141416 46%, rgba(20, 20, 22, 0.1) 100%);
         }
+
+        @include mobile-small {
+            height: 285px;
+        }
     }
 
     &__container {
@@ -65,6 +69,11 @@
             justify-content: flex-end;
             align-items: center;
         }
+
+        @include mobile {
+            padding-bottom: 30px;
+            min-height: 420px;
+        }
     }
 
     &__subtitle {
@@ -84,6 +93,10 @@
 
         @include mobile {
             margin-bottom: 8px;
+        }
+
+        @include mobile-small {
+            font-size: 14px;
         }
     }
 
@@ -107,6 +120,25 @@
             margin-bottom: 40px;
             font-size: 35px;
             text-align: center;
+        }
+
+        @include mobile {
+            font-size: 24px;
+        }
+    }
+
+    &__btn-desktop {
+
+        @include mobile-small {
+            display: none;
+        }
+    }
+
+    &__btn-mobile {
+        display: none;
+
+        @include mobile-small {
+            display: block;
         }
     }
 }
