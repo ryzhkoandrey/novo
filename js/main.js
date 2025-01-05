@@ -14,11 +14,11 @@ menuToggler.onclick = function () {
 // swiper
 
 let swiper;
-const pageWidht = 478;
+const pageWidth = 478;
 let isSwiperActive = false;
 
 function initSwiper() {
-    if (window.innerWidth <= pageWidht && !swiper) {
+    if (window.innerWidth <= pageWidth && !swiper) {
         swiper = new Swiper('.swiper', {
             slidesPerView: 'auto',
             spaceBetween: 10,
@@ -29,7 +29,7 @@ function initSwiper() {
 }
 
 function destroySwiper() {
-    if (window.innerWidth > pageWidht && swiper) {
+    if (window.innerWidth > pageWidth && swiper) {
         swiper.destroy(true, true);
         swiper = null;
         isSwiperActive = false;
@@ -37,9 +37,9 @@ function destroySwiper() {
 }
 
 window.addEventListener('resize', () => {
-    if (window.innerWidth <= pageWidht && !isSwiperActive) {
+    if (window.innerWidth <= pageWidth && !isSwiperActive) {
         initSwiper();
-    } else if (window.innerWidth > pageWidht && isSwiperActive) {
+    } else if (window.innerWidth > pageWidth && isSwiperActive) {
         destroySwiper();
     }
 });

@@ -263,7 +263,7 @@
 
         @include mobile-small {
             top: 53px;
-            width: 390px;
+            width: 430px;
         }
     }
 
@@ -292,7 +292,7 @@
 
             @include mobile-small {
                 top: 27px;
-                transform: translateX(calc(-50% - 104px));
+                transform: translateX(calc(-50% - 103px));
             }
         }
 
@@ -339,7 +339,7 @@
 
             @include mobile-small {
                 top: 27px;
-                transform: translateX(calc(-50% + 104px));
+                transform: translateX(calc(-50% + 103px));
             }
         }
     }
