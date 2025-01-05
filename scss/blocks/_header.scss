@@ -10,6 +10,10 @@
         padding: 28px 0;
     }
 
+    @include mobile-small {
+        padding: 20px 0;
+    }
+
     &__inner {
         display: flex;
         justify-content: space-between;
