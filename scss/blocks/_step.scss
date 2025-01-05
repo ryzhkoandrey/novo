@@ -3,6 +3,10 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
 
+    @include mobile {
+        display: block;
+    }
+
     &--reverse {
 
         .step__image {
@@ -10,6 +14,10 @@
 
             @include laptop {
                 transform: translateX(-40px);
+            }
+
+            @include mobile {
+                transform: translateX(-50%);
             }
         }
 
@@ -25,6 +33,11 @@
             @include tablet {
                 padding: 0 128px 0 var(--container-padding);
             }
+
+            @include mobile {
+                padding: 244px 0 0;
+                justify-content: center;
+            }
         }
     }
 
@@ -37,6 +50,11 @@
         @include laptop {
             transform: translateX(calc(-100% + 40px));
             width: 600px;
+        }
+
+        @include mobile {
+            width: 380px;
+            transform: translateX(-50%);
         }
     }
 
@@ -55,6 +73,15 @@
         @include tablet {
             padding: 0 var(--container-padding) 0 120px;
         }
+
+        @include mobile {
+            margin: 0 auto;
+            padding: 244px 0 0;
+            max-width: 380px;
+            width: 100%;
+            min-height: auto;
+            justify-content: center;
+        }
     }
 
     &__info-inner {
@@ -62,6 +89,11 @@
         display: flex;
         flex-direction: column;
         gap: 8px;
+
+        @include mobile {
+            align-items: center;
+            gap: 11px;
+        }
     }
 
     &__subtitle {
