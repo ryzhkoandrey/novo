@@ -1,7 +1,7 @@
 .steps {
     overflow: hidden;
     padding: 120px 0;
-    background: #1b1b1e;
+    background: var(--color-bg-2);
 
     @include tablet {
         padding: 100px 0;

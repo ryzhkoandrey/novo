@@ -150,7 +150,7 @@
         overflow: hidden;
         position: relative;
         border-radius: 8px;
-        background: #1b1b1e;
+        background: var(--color-bg-2);
 
         @include mobile {
             height: 231px;
@@ -201,7 +201,7 @@
     &__bottom {
         overflow: hidden;
         padding: 90px 0 110px;
-        background: #1b1b1e;
+        background: var(--color-bg-2);
 
         @include laptop {
             padding: 80px 0;

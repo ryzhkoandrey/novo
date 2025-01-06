@@ -71,7 +71,7 @@
         font-weight: 500;
         font-size: 14px;
         line-height: 1.71429;
-        color: rgba(255, 255, 255, 0.6);
+        color: var(--color-text-3);
 
         @include mobile {
             max-width: 300px;
@@ -92,7 +92,7 @@
         font-weight: 500;
         font-size: 14px;
         line-height: 1.5;
-        color: rgba(255, 255, 255, 0.6);
+        color: var(--color-text-3);
     }
 
     &__links-row {
@@ -140,7 +140,7 @@
         font-weight: 500;
         font-size: 14px;
         line-height: 1.5;
-        color: rgba(255, 255, 255, 0.6);
+        color: var(--color-text-3);
     }
 
     &__socials-list {
@@ -175,7 +175,7 @@
         font-size: 14px;
         line-height: 1.71429;
         text-align: center;
-        color: rgba(255, 255, 255, 0.6);
+        color: var(--color-text-3);
 
         @include mobile-small {
             max-width: 169px;

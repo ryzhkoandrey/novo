@@ -57,7 +57,7 @@
             border-radius: 8px;
             width: 108px;
             height: 180px;
-            background: #1b1b1e;
+            background: var(--color-bg-2);
 
             @include laptop {
                 height: 136px;
@@ -138,7 +138,7 @@
     &__cta-info {
         border-radius: 8px;
         padding: 30px 40px 38px 259px;
-        background: #1b1b1e;
+        background: var(--color-bg-2);
 
         @include tablet {
             padding: 40px 40px 40px 189px;
@@ -182,7 +182,7 @@
         font-weight: 400;
         font-size: 16px;
         line-height: 1.5;
-        color: #858586;
+        color: var(--color-text-2);
 
         @include mobile {
             text-align: center;

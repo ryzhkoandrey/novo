@@ -15,7 +15,7 @@
         flex-direction: column;
         align-items: center;
         gap: 60px;
-        background: #1b1b1e;
+        background: var(--color-bg-2);
     }
 
     @include mobile-small {
@@ -52,7 +52,7 @@
         font-weight: 600;
         font-size: 14px;
         line-height: 1.71429;
-        color: #858586;
+        color: var(--color-text-2);
 
         @include mobile {
             padding: 5px;

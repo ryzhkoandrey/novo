@@ -12,7 +12,7 @@
         max-width: 598px;
         width: 100%;
         box-shadow: 0 56px 94px 0 rgba(0, 0, 0, 0.53);
-        background: #1b1b1e;
+        background: var(--color-bg-2);
 
         @include tablet {
             padding: 60px 80px;
@@ -82,7 +82,7 @@
         font-size: 16px;
         line-height: 1.5;
         text-align: center;
-        color: #858586;
+        color: var(--color-text-2);
 
         @include tablet {
             margin: 0 auto 32px;
@@ -128,7 +128,7 @@
         transition: 0.2s;
 
         &::placeholder {
-            color: #858586;
+            color: var(--color-text-2);
         }
 
         &:hover {
