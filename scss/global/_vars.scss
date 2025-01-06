@@ -1,5 +1,10 @@
 :root {
 
+    // container
+
+    --container-width: 1216px;
+    --container-padding: 20px;
+
     // fonts
 
     --font-primary: 'Manrope', sans-serif;
@@ -18,9 +23,4 @@
 
     --color-bg: #141416;
     --color-bg-2: #1b1b1e;
-
-    // container
-
-    --container-width: 1216px;
-    --container-padding: 20px;
 }
