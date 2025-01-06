@@ -50,15 +50,17 @@
     }
 
     &__inner {
+        padding-top: 157px;
         max-width: 553px;
         min-height: 762px;
         display: flex;
         flex-direction: column;
-        justify-content: center;
         align-items: flex-start;
 
         @include laptop {
+            padding: 0;
             min-height: 650px;
+            justify-content: center;
         }
 
         @include mobile {
