@@ -2,9 +2,11 @@
 
 // ---------- MENU ----------
 
+const menu = document.querySelector('.menu');
 const menuToggler = document.querySelector('.menu-toggler');
 
 menuToggler.onclick = function () {
+    menu.classList.toggle('menu--active');
     menuToggler.classList.toggle('menu-toggler--active');
     document.body.classList.toggle('no-scroll');
 };
@@ -29,7 +31,7 @@ function initSwiper() {
 }
 
 function destroySwiper() {
-    if (window.innerWidth > pageWidth && swiper) {
+    if (swiper) {
         swiper.destroy(true, true);
         swiper = null;
         isSwiperActive = false;
