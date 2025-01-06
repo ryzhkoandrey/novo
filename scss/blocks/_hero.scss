@@ -107,7 +107,7 @@
         font-weight: 400;
         font-size: 60px;
         line-height: 1.5;
-        color: #fff;
+        color: var(--color-text);
 
         @include laptop {
             margin-bottom: 50px;

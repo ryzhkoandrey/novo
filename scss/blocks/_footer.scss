@@ -114,14 +114,14 @@
         font-size: 14px;
         line-height: 1.71429;
         text-transform: uppercase;
-        color: #fff;
+        color: var(--color-text);
 
         @include mobile-small {
             line-height: 1.3;
         }
 
         &:hover {
-            color: #009661;
+            color: var(--color-primary);
         }
     }
 

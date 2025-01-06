@@ -3,7 +3,7 @@
     font-size: 40px;
     line-height: 1.5;
     text-align: center;
-    color: #fff;
+    color: var(--color-text);
 
     @include laptop {
         font-size: 30px;

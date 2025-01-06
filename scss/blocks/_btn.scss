@@ -5,11 +5,11 @@
     font-size: 16px;
     line-height: 1.5;
     text-transform: uppercase;
-    color: #fff;
-    background: #009661;
+    color: var(--color-text);
+    background: var(--color-primary);
 
     &:hover {
-        background: #00c37e;
+        background: var(--color-primary-2);
     }
 
     &--large {
