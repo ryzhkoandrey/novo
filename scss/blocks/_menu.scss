@@ -70,9 +70,5 @@
         @include mobile {
             display: block;
         }
-
-        @include mobile-small {
-            width: 100%;
-        }
     }
 }
